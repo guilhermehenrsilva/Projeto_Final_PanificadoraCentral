@@ -113,6 +113,7 @@ namespace PANIFICADORA_CENTRAL_2
             conectaBanco conecta = new conectaBanco();
             bool retorno = conecta.new_alteraClientes(C, idAlterar);
             LimpaCamposAlt();
+            MessageBox.Show("Cliente Alterado");
             listaCliente();
         }
         void listaCliente()
