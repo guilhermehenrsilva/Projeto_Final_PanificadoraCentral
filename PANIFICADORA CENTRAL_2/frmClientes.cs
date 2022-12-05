@@ -112,6 +112,7 @@ namespace PANIFICADORA_CENTRAL_2
             // enviar os dados para alterar
             conectaBanco conecta = new conectaBanco();
             bool retorno = conecta.new_alteraClientes(C, idAlterar);
+            MessageBox.Show("Cliente Alterado");
             LimpaCamposAlt();
             listaCliente();
         }
@@ -123,7 +124,7 @@ namespace PANIFICADORA_CENTRAL_2
 
         private void txtBuscaCliente_TextChanged(object sender, EventArgs e)
         {
-            (dgClientes.DataSource as DataTable).DefaultView.RowFilter = String.Format("nomeCliente like'%{0}%'", txtBuscaCliente.Text);
+            (dgClientes.DataSource as DataTable).DefaultView.RowFilter = String.Format("nome like'%{0}%'", txtBuscaCliente.Text);
         }
 
         private void btnAlterarCliente_Click(object sender, EventArgs e)

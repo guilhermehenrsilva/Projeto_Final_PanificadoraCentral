@@ -416,9 +416,6 @@
   <data name="&gt;&gt;panelForm.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
