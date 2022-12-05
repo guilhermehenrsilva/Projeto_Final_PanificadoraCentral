@@ -177,6 +177,11 @@ namespace PANIFICADORA_CENTRAL_2
         {
 
         }
+
+        private void btnLimpaCli_Click(object sender, EventArgs e)
+        {
+            LimpaCamposAlt();
+        }
     }
 
 }

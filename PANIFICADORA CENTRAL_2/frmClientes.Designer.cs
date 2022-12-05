@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlClientes = new System.Windows.Forms.TabControl();
             this.CLIENTES = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
             this.btnConfirma = new System.Windows.Forms.Button();
             this.textBairroCliente = new System.Windows.Forms.TextBox();
             this.textUFCliente = new System.Windows.Forms.TextBox();
@@ -55,6 +56,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnLimpaCli = new System.Windows.Forms.Button();
             this.btnConfirmaAltera = new System.Windows.Forms.Button();
             this.textBairroCliAlt = new System.Windows.Forms.TextBox();
             this.textUfCliAlt = new System.Windows.Forms.TextBox();
@@ -83,7 +85,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.txtBuscaCliente = new System.Windows.Forms.TextBox();
             this.dgClientes = new System.Windows.Forms.DataGridView();
-            this.label19 = new System.Windows.Forms.Label();
             this.tabControlClientes.SuspendLayout();
             this.CLIENTES.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -135,6 +136,20 @@
             this.CLIENTES.TabIndex = 0;
             this.CLIENTES.Text = "CADASTRAR";
             this.CLIENTES.Click += new System.EventHandler(this.CLIENTES_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.DimGray;
+            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label19.Location = new System.Drawing.Point(21, 105);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(122, 40);
+            this.label19.TabIndex = 91;
+            this.label19.Text = "Data \r\nde nascimento:";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConfirma
             // 
@@ -362,6 +377,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnLimpaCli);
             this.tabPage1.Controls.Add(this.btnConfirmaAltera);
             this.tabPage1.Controls.Add(this.textBairroCliAlt);
             this.tabPage1.Controls.Add(this.textUfCliAlt);
@@ -391,8 +407,31 @@
             this.tabPage1.Text = "ALTERAR";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnLimpaCli
+            // 
+            this.btnLimpaCli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpaCli.FlatAppearance.BorderSize = 0;
+            this.btnLimpaCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpaCli.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLimpaCli.ForeColor = System.Drawing.Color.DimGray;
+            this.btnLimpaCli.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.menos;
+            this.btnLimpaCli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpaCli.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLimpaCli.Location = new System.Drawing.Point(374, 371);
+            this.btnLimpaCli.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpaCli.Name = "btnLimpaCli";
+            this.btnLimpaCli.Size = new System.Drawing.Size(51, 64);
+            this.btnLimpaCli.TabIndex = 103;
+            this.btnLimpaCli.TabStop = false;
+            this.btnLimpaCli.Text = "   ";
+            this.btnLimpaCli.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpaCli.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpaCli.UseVisualStyleBackColor = true;
+            this.btnLimpaCli.Click += new System.EventHandler(this.btnLimpaCli_Click);
+            // 
             // btnConfirmaAltera
             // 
+            this.btnConfirmaAltera.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirmaAltera.FlatAppearance.BorderSize = 0;
             this.btnConfirmaAltera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmaAltera.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -400,7 +439,7 @@
             this.btnConfirmaAltera.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirmaAltera.Image")));
             this.btnConfirmaAltera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfirmaAltera.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnConfirmaAltera.Location = new System.Drawing.Point(345, 368);
+            this.btnConfirmaAltera.Location = new System.Drawing.Point(299, 371);
             this.btnConfirmaAltera.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmaAltera.Name = "btnConfirmaAltera";
             this.btnConfirmaAltera.Size = new System.Drawing.Size(51, 64);
@@ -657,18 +696,20 @@
             // 
             // btnAlterarCliente
             // 
+            this.btnAlterarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlterarCliente.FlatAppearance.BorderSize = 0;
             this.btnAlterarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlterarCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.btnAlterarCliente.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.atualizar;
             this.btnAlterarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterarCliente.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAlterarCliente.Location = new System.Drawing.Point(593, -5);
+            this.btnAlterarCliente.Location = new System.Drawing.Point(574, 0);
             this.btnAlterarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlterarCliente.Name = "btnAlterarCliente";
-            this.btnAlterarCliente.Size = new System.Drawing.Size(122, 51);
+            this.btnAlterarCliente.Size = new System.Drawing.Size(133, 42);
             this.btnAlterarCliente.TabIndex = 20;
-            this.btnAlterarCliente.Text = "Alterar";
+            this.btnAlterarCliente.Text = "   Alterar";
             this.btnAlterarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterarCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlterarCliente.UseVisualStyleBackColor = true;
@@ -676,18 +717,20 @@
             // 
             // btnRemoveCliente
             // 
+            this.btnRemoveCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemoveCliente.FlatAppearance.BorderSize = 0;
             this.btnRemoveCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRemoveCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRemoveCliente.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.lixo;
             this.btnRemoveCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRemoveCliente.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRemoveCliente.Location = new System.Drawing.Point(421, 0);
             this.btnRemoveCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveCliente.Name = "btnRemoveCliente";
-            this.btnRemoveCliente.Size = new System.Drawing.Size(122, 40);
+            this.btnRemoveCliente.Size = new System.Drawing.Size(145, 40);
             this.btnRemoveCliente.TabIndex = 19;
-            this.btnRemoveCliente.Text = "Remover";
+            this.btnRemoveCliente.Text = "   Remover";
             this.btnRemoveCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemoveCliente.UseVisualStyleBackColor = true;
             this.btnRemoveCliente.Click += new System.EventHandler(this.btnRemoveCliente_Click);
@@ -754,20 +797,6 @@
             this.dgClientes.Size = new System.Drawing.Size(753, 433);
             this.dgClientes.TabIndex = 16;
             this.dgClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClientes_CellContentClick);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(21, 105);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(122, 40);
-            this.label19.TabIndex = 91;
-            this.label19.Text = "Data \r\nde nascimento:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmClientes
             // 
@@ -845,5 +874,6 @@
         private DataGridView dgClientes;
         private Label lblmsgerro;
         private Label label19;
+        private Button btnLimpaCli;
     }
 }

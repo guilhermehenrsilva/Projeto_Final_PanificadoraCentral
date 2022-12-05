@@ -164,5 +164,12 @@ namespace PANIFICADORA_CENTRAL_2
         {
             (dgFornecedor.DataSource as DataTable).DefaultView.RowFilter = String.Format("Nome_Empresarial like'%{0}%'", txtBuscaForn.Text);
         }
+
+       
+
+        private void btnLimpa_Click(object sender, EventArgs e)
+        {
+            LimpaCamposForAlt();
+        }
     }
 }

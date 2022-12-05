@@ -54,6 +54,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnLimpa = new System.Windows.Forms.Button();
             this.btnConfirmaAltFor = new System.Windows.Forms.Button();
             this.textBairroForAlt = new System.Windows.Forms.TextBox();
             this.textUfForAlt = new System.Windows.Forms.TextBox();
@@ -130,6 +131,7 @@
             // 
             // btnConfirmaFor
             // 
+            this.btnConfirmaFor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirmaFor.FlatAppearance.BorderSize = 0;
             this.btnConfirmaFor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmaFor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -345,6 +347,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnLimpa);
             this.tabPage1.Controls.Add(this.btnConfirmaAltFor);
             this.tabPage1.Controls.Add(this.textBairroForAlt);
             this.tabPage1.Controls.Add(this.textUfForAlt);
@@ -372,8 +375,31 @@
             this.tabPage1.Text = "ALTERAR";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnLimpa
+            // 
+            this.btnLimpa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpa.FlatAppearance.BorderSize = 0;
+            this.btnLimpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLimpa.ForeColor = System.Drawing.Color.DimGray;
+            this.btnLimpa.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.menos;
+            this.btnLimpa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLimpa.Location = new System.Drawing.Point(386, 356);
+            this.btnLimpa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpa.Name = "btnLimpa";
+            this.btnLimpa.Size = new System.Drawing.Size(51, 64);
+            this.btnLimpa.TabIndex = 82;
+            this.btnLimpa.TabStop = false;
+            this.btnLimpa.Text = "   ";
+            this.btnLimpa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpa.UseVisualStyleBackColor = true;
+            this.btnLimpa.Click += new System.EventHandler(this.btnLimpa_Click);
+            // 
             // btnConfirmaAltFor
             // 
+            this.btnConfirmaAltFor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirmaAltFor.FlatAppearance.BorderSize = 0;
             this.btnConfirmaAltFor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmaAltFor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -381,7 +407,7 @@
             this.btnConfirmaAltFor.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirmaAltFor.Image")));
             this.btnConfirmaAltFor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfirmaAltFor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnConfirmaAltFor.Location = new System.Drawing.Point(343, 347);
+            this.btnConfirmaAltFor.Location = new System.Drawing.Point(314, 356);
             this.btnConfirmaAltFor.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmaAltFor.Name = "btnConfirmaAltFor";
             this.btnConfirmaAltFor.Size = new System.Drawing.Size(51, 64);
@@ -603,18 +629,20 @@
             // 
             // btnAlterarForn
             // 
+            this.btnAlterarForn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlterarForn.FlatAppearance.BorderSize = 0;
             this.btnAlterarForn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterarForn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlterarForn.ForeColor = System.Drawing.Color.DimGray;
+            this.btnAlterarForn.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.atualizar;
             this.btnAlterarForn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterarForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAlterarForn.Location = new System.Drawing.Point(600, 9);
+            this.btnAlterarForn.Location = new System.Drawing.Point(596, 4);
             this.btnAlterarForn.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlterarForn.Name = "btnAlterarForn";
             this.btnAlterarForn.Size = new System.Drawing.Size(122, 42);
             this.btnAlterarForn.TabIndex = 25;
-            this.btnAlterarForn.Text = "Alterar";
+            this.btnAlterarForn.Text = "   Alterar";
             this.btnAlterarForn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterarForn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlterarForn.UseVisualStyleBackColor = true;
@@ -622,18 +650,20 @@
             // 
             // btnRemoveForn
             // 
+            this.btnRemoveForn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemoveForn.FlatAppearance.BorderSize = 0;
             this.btnRemoveForn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveForn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRemoveForn.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRemoveForn.Image = global::PANIFICADORA_CENTRAL_2.Properties.Resources.lixo;
             this.btnRemoveForn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRemoveForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRemoveForn.Location = new System.Drawing.Point(434, 15);
+            this.btnRemoveForn.Location = new System.Drawing.Point(456, 2);
             this.btnRemoveForn.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveForn.Name = "btnRemoveForn";
-            this.btnRemoveForn.Size = new System.Drawing.Size(122, 31);
+            this.btnRemoveForn.Size = new System.Drawing.Size(132, 44);
             this.btnRemoveForn.TabIndex = 24;
-            this.btnRemoveForn.Text = "Remover";
+            this.btnRemoveForn.Text = "   Remover";
             this.btnRemoveForn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemoveForn.UseVisualStyleBackColor = true;
             this.btnRemoveForn.Click += new System.EventHandler(this.btnRemoveForn_Click);
@@ -772,5 +802,6 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private Button btnLimpa;
     }
 }
