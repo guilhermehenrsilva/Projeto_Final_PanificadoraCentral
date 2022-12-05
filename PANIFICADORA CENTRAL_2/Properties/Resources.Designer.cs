@@ -83,6 +83,17 @@ namespace PANIFICADORA_CENTRAL_2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_zoom_meeting_background_design_template_48741858a021be338214f56780c0283d_screen {
+            get {
+                object obj = ResourceManager.GetObject("blue-zoom-meeting-background-design-template-48741858a021be338214f56780c0283d_scr" +
+                        "een", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel {
             get {
                 object obj = ResourceManager.GetObject("cancel", resourceCulture);
@@ -96,6 +107,16 @@ namespace PANIFICADORA_CENTRAL_2.Properties {
         internal static System.Drawing.Bitmap casa {
             get {
                 object obj = ResourceManager.GetObject("casa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap D_NQ_NP_680906_MLB32770490714_112019_O {
+            get {
+                object obj = ResourceManager.GetObject("D_NQ_NP_680906-MLB32770490714_112019-O", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

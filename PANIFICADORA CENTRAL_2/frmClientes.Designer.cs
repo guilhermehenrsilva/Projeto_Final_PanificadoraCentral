@@ -153,6 +153,7 @@
             // 
             // btnConfirma
             // 
+            this.btnConfirma.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirma.FlatAppearance.BorderSize = 0;
             this.btnConfirma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirma.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

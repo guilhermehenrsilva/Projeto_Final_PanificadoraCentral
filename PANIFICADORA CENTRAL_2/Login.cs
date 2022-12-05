@@ -35,5 +35,10 @@ namespace PANIFICADORA_CENTRAL_2
             else
                 MessageBox.Show("Usuario ou senha incorreta");
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
