@@ -40,5 +40,10 @@ namespace PANIFICADORA_CENTRAL_2
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
